@@ -1,0 +1,28 @@
+{
+  "name": "oleg",
+  "version": "0.1.0",
+  "description": "100 daily quotes of Oleg",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Milk-Cool/oleg.git"
+  },
+  "keywords": [
+    "oleg",
+    "letovo"
+  ],
+  "author": "Milk_Cool",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Milk-Cool/oleg/issues"
+  },
+  "homepage": "https://github.com/Milk-Cool/oleg#readme",
+  "dependencies": {
+    "node-cron": "^3.0.3",
+    "node-telegram-bot-api": "^0.66.0"
+  }
+}
