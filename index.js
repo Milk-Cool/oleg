@@ -1,6 +1,7 @@
 import TelegramBot from "node-telegram-bot-api";
 import cron from "node-cron";
 import fs from "fs";
+import { createServer } from "http";
 
 const getDay = () => Math.floor(Number(new Date()) / (1000 * 3600 * 24));
 
@@ -16,3 +17,5 @@ cron.schedule("0 7 * * *", async () => {
     if(n >= quotes.length) return;
     bot.sendMessage(parseInt(ID), quotes[n]);
 });
+
+createServer((_req, res) => res.end("ok!")).listen(8079);
